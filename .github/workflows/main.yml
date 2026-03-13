@@ -1,4 +1,3 @@
-
 name: Build APK
 on: [push]
 jobs:
@@ -7,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build with Buildozer
-        uses: ArtemGr/buildozer-action@v1.6.1
+        uses: ArtemGr/buildozer-action@v1
         with:
           workdir: .
       - name: Upload APK
